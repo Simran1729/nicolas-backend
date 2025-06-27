@@ -221,6 +221,7 @@ app.post("/api/create-ticket", upload.array('files', 10), async (req, res) => {
           productId: "", // Can be updated if needed,
           // teamId : teamId,
           priority : priority,
+          channel:"Voice Note",
           cf: { // ✅ Add custom fields (cf)
               cf_permanentaddress: null,
               cf_dateofpurchase: null,
